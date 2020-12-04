@@ -11,7 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
+    <link id="theme-style" rel="stylesheet" href="">
+
   </head>
   <body>
     <section class="s1">
@@ -29,7 +31,7 @@
               <div id="dot-3" class="browser-dot"></div>
             </div>
             <div id="navigation">
-              <li><a href="#">Contact</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
             </div>
 
           </div>
@@ -39,10 +41,10 @@
             <h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
             
             <div id="theme-options-wrapper">
-              <div id="light-mode" class="theme-dot"></div>
-              <div id="blue-mode" class="theme-dot"></div>
-              <div id="green-mode" class="theme-dot"></div>
-              <div id="purple-mode" class="theme-dot"></div>
+              <div data-mode="light" id="light-mode" class="theme-dot"></div>
+              <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+              <div data-mode="green" id="green-mode" class="theme-dot"></div>
+              <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
             </div>
             <p id="settings-note">*Theme settings will be saved for your next visit.</p>
 
@@ -79,7 +81,7 @@
 
           <h4>Top Expertise</h4>
 
-          <p>Fullstack developer with primary focuse on Django + HTML/CSS. <a target="_blank" href="Vlachos Evangelos Cv.pdf">Download Resume</a></p>
+          <p>Fullstack developer with primary focuse on Django + HTML/CSS. <a target="_blank" href="Vlachos Evangelos Cv.pdf" >Download Resume</a></p>
 
           <div id="skills">
             <ul>
@@ -126,7 +128,7 @@
              <div class="post-preview">
                <h6 class="post-title">Project Title No1</h6>
                <p class="post-intro">Project description, lorem ipsum has been the   industry's standard dummy text ever since the 1500s.</p>
-               <a href="#"> Read more</a>
+               <a href="post.html"> Read more</a>
              </div>
            </div>
           </div>
@@ -137,7 +139,7 @@
             <div class="post-preview">
               <h6 class="post-title">Project Title No2</h6>
               <p class="post-intro">Project description, lorem ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-              <a href="#"> Read more</a>
+              <a href="post.html#project-02"> Read more</a>
             </div>
           </div>
         </div>
@@ -148,7 +150,7 @@
             <div class="post-preview">
               <h6 class="post-title">Project Title No3</h6>
               <p class="post-intro">Project description lorem ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-              <a href="#"> Read more</a>
+              <a href="post.html#project-03"> Read more</a>
             </div>
           </div>
           </div>
@@ -160,6 +162,8 @@
 
         <h3 style="text-align: center;">Get In Touch</h3>
         <form id="contanct-form">
+
+          <a name="contact"></a>
 
           <label>Name</label>
           <input class="input-field" type="text" name="name">
@@ -179,5 +183,6 @@
       </div>
     </section>
 
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
